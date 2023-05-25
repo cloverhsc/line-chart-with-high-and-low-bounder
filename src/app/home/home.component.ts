@@ -39,18 +39,24 @@ export class HomeComponent {
   generateLineData(numOfLine: number): Array<any> {
     const lineData: Array<any> = [];
 
-
+    // Generate data for each line
     for (let lineIndex = 0; lineIndex < numOfLine; lineIndex++) {
       let line = [];
+
+      // Add a random username to the line
       const dataName = faker.internet.userName();
       line.push(dataName);
 
+      // Add 10 random numbers to the line
       for (let dataIndex = 0; dataIndex < 10; dataIndex++) {
         line.push(Math.floor(Math.random() * 100));
       }
+
+      // Add the line to the lineData array
       lineData.push(line);
     }
 
+    // Return the generated line data
     return lineData;
   }
 }
