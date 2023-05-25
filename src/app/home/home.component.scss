@@ -1,0 +1,23 @@
+:host ::ng-deep .LowBound line {
+  stroke: royalblue;
+  stroke-width: 4;
+  stroke-dasharray: 10 10;
+}
+
+:host ::ng-deep  .LowBound text {
+  fill: royalblue;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+:host ::ng-deep  .HighBound line {
+  stroke: red;
+  stroke-width: 4;
+  stroke-dasharray: 10 10;
+}
+
+:host ::ng-deep  .HighBound text {
+  fill: red;
+  font-size: 12px;
+  font-weight: bold;
+}
